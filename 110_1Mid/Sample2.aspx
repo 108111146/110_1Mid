@@ -15,8 +15,11 @@
             <asp:Label ID="lb_Id" runat="server" Text="Label"></asp:Label>
            <br />
             <asp:Label ID="Label2" runat="server" Text="聯絡方式" Font-Size="X-Large"></asp:Label>
-            <asp:DropDownList ID="ddl_Type" runat="server" OnSelectedIndexChanged="ddl_Type_SelectedIndexChanged"></asp:DropDownList><br />
-            <asp:DropDownList ID="ddl_ZoneCode" runat="server" OnSelectedIndexChanged="ddl_ZoneCode_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_Type" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_Type_SelectedIndexChanged">
+                <asp:ListItem>市話</asp:ListItem>
+                <asp:ListItem>手機</asp:ListItem>
+            </asp:DropDownList><br />
+            <asp:DropDownList ID="ddl_ZoneCode" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_ZoneCode_SelectedIndexChanged"></asp:DropDownList>
             <asp:TextBox ID="tb_Number" runat="server"></asp:TextBox>
             <br />
 
