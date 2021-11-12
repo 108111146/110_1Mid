@@ -10,7 +10,31 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>維修項目單</h1> <br />
+            <asp:Label ID="Label1" runat="server" Text="編號" Font-Size="X-Large"></asp:Label>
+            <asp:Label ID="lb_Id" runat="server" Text="Label"></asp:Label>
+           <br />
+            <asp:Label ID="Label2" runat="server" Text="聯絡方式" Font-Size="X-Large"></asp:Label>
+            <asp:DropDownList ID="ddl_Type" runat="server" OnSelectedIndexChanged="ddl_Type_SelectedIndexChanged"></asp:DropDownList><br />
+            <asp:DropDownList ID="ddl_ZoneCode" runat="server" OnSelectedIndexChanged="ddl_ZoneCode_SelectedIndexChanged"></asp:DropDownList>
+            <asp:TextBox ID="tb_Number" runat="server"></asp:TextBox>
+            <br />
+
+            <asp:Label ID="Label3" runat="server" Text="地址" Font-Size="X-Large"></asp:Label>
+            <asp:DropDownList ID="ddl_City" runat="server"></asp:DropDownList>
+            <asp:TextBox ID="tb_Add" runat="server"></asp:TextBox>
+            <br />
+            <asp:Label ID="Label4" runat="server" Text="說明" Font-Size="X-Large"></asp:Label>
+            <asp:RadioButtonList ID="rb_Des" runat="server"  AutoPostBack="True" OnSelectedIndexChanged="rb_Des_SelectedIndexChanged">
+                <asp:ListItem>否</asp:ListItem>
+                <asp:ListItem>是</asp:ListItem>
+            </asp:RadioButtonList>
         </div>
+        <asp:TextBox ID="tb_Des" runat="server" Visible="False" Width="400px"></asp:TextBox>
+        <br />
+        <asp:Button ID="btn_Submit" runat="server" Text="送出" OnClick="btn_Submit_Click" />
+        <br />
+        <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>
     </form>
 </body>
 </html>

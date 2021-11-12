@@ -14,7 +14,7 @@
             <asp:Label ID="Label1" runat="server" Text="帳號" Font-Size="X-Large" ></asp:Label>
             <asp:TextBox ID="tb_Id" runat="server" Height="15px" Width="200px"></asp:TextBox><br />
             <asp:Label ID="Label2" runat="server" Text="密碼" Font-Size="X-Large" ></asp:Label>
-            <asp:TextBox ID="tb_Ps" runat="server" Height="15px" TextMode="Password" Width="200px"></asp:TextBox>
+            <asp:TextBox ID="tb_Ps" runat="server" Height="15px" TextMode="Password" Width="200px" ></asp:TextBox>
             <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" Width="30px" ImageUrl="eye-slash-solid.svg"/>
             <br />
             <asp:Label ID="Label3" runat="server" Text="管道得知(可多選)" Font-Size="X-Large" > </asp:Label>
