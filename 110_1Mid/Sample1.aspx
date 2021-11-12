@@ -29,10 +29,10 @@
             <br />
             <asp:Label ID="Label5" runat="server" Text="驗證碼" Font-Size="X-Large" ></asp:Label>
             <asp:TextBox ID="tb_Num" runat="server" Height="15px" Width="50px"></asp:TextBox>
-            <asp:Image ID="ig_Num" runat="server" PostBackUrl="~/Sample1Com.aspx" OnClick="btn_Submit_Click"/>
+            <asp:Image ID="ig_Num" runat="server" />
             <br />
-            <asp:Button ID="btn_Submit" runat="server" Text="送出" Height="30px" Width="80px" />
-            <asp:HiddenField ID="HiddenField1" runat="server" />
+            <asp:Button ID="btn_Submit" runat="server" Text="送出" Height="30px" Width="80px" PostBackUrl="~/Sample1Com.aspx"  />
+            <asp:HiddenField ID="hd_Num" runat="server" />
         </div>
     </form>
 </body>
